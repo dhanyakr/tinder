@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="njj-KL-wVs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Cards View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CardsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SJ2-Gs-2Bj"/>
+                        <viewControllerLayoutGuide type="bottom" id="q7S-RB-n4X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="nh6-2a-XSW">
+                                <rect key="frame" x="10" y="64" width="300" height="57"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Z4-WP-P7A">
+                                <rect key="frame" x="10" y="120" width="300" height="354"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="N5B-F7-RTj" appends="YES" id="L5Q-FX-QK3"/>
+                                    <outletCollection property="gestureRecognizers" destination="rAL-X4-Ggr" appends="YES" id="PHK-sY-zxC"/>
+                                </connections>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="XmU-zp-abz">
+                                <rect key="frame" x="76" y="474" width="320" height="108"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XmU-zp-abz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1G1-1a-IFc"/>
+                            <constraint firstItem="5Z4-WP-P7A" firstAttribute="top" secondItem="nh6-2a-XSW" secondAttribute="bottom" constant="-1" id="1bB-kc-pj4"/>
+                            <constraint firstAttribute="trailing" secondItem="5Z4-WP-P7A" secondAttribute="trailing" id="8MR-5u-WPf"/>
+                            <constraint firstItem="5Z4-WP-P7A" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="EnT-Yq-Z3S"/>
+                            <constraint firstItem="nh6-2a-XSW" firstAttribute="top" secondItem="SJ2-Gs-2Bj" secondAttribute="bottom" id="QVo-5z-TxW"/>
+                            <constraint firstItem="nh6-2a-XSW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S62-v6-tDM"/>
+                            <constraint firstItem="XmU-zp-abz" firstAttribute="top" secondItem="5Z4-WP-P7A" secondAttribute="bottom" id="Vd8-1b-1Xm"/>
+                            <constraint firstItem="q7S-RB-n4X" firstAttribute="top" secondItem="XmU-zp-abz" secondAttribute="bottom" id="gF9-I2-MEQ"/>
+                            <constraint firstItem="5Z4-WP-P7A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m4d-jg-xP3"/>
+                            <constraint firstAttribute="trailing" secondItem="nh6-2a-XSW" secondAttribute="trailing" id="vDe-YK-lXf"/>
+                            <constraint firstItem="nh6-2a-XSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zTD-xa-JvJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="z7l-m4-iE3"/>
+                    <connections>
+                        <outlet property="cardImageView" destination="5Z4-WP-P7A" id="dOP-Pr-cwl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="N5B-F7-RTj">
+                    <connections>
+                        <action selector="onCardImagePanGesture:" destination="BYZ-38-t0r" id="wXz-QC-ZFq"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="rAL-X4-Ggr">
+                    <connections>
+                        <action selector="onCardImageTapGesture:" destination="BYZ-38-t0r" id="Dpx-jg-eZF"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="707" y="357"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yDc-Lx-ZhB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="njj-KL-wVs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3Xu-xm-tRl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ITS-B3-tpB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z4r-cS-QvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+    </resources>
+</document>

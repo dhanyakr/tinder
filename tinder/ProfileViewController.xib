@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController">
+            <connections>
+                <outlet property="cardImageView" destination="7KL-16-CET" id="iPk-6n-85A"/>
+                <outlet property="navBarView2" destination="Oyd-q9-lGc" id="Ssg-uZ-pzn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvJ-7L-GWD">
+                    <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJc-mq-Af0">
+                            <rect key="frame" x="0.0" y="439" width="320" height="85"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ryan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7b-hf-6al">
+                                    <rect key="frame" x="20" y="15" width="38" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="85" id="JaQ-l5-Ilg"/>
+                            </constraints>
+                        </view>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="Oyd-q9-lGc">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="5yb-4U-0q1"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="waQ-tw-Hgk" appends="YES" id="lVv-pg-Y7N"/>
+                            </connections>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="7KL-16-CET">
+                            <rect key="frame" x="0.0" y="70" width="320" height="376"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="KJc-mq-Af0" firstAttribute="leading" secondItem="WvJ-7L-GWD" secondAttribute="leading" id="24J-fG-CkG"/>
+                        <constraint firstItem="7KL-16-CET" firstAttribute="centerX" secondItem="WvJ-7L-GWD" secondAttribute="centerX" id="IxS-05-5Kd"/>
+                        <constraint firstItem="Oyd-q9-lGc" firstAttribute="leading" secondItem="WvJ-7L-GWD" secondAttribute="leading" id="KM8-DA-hlD"/>
+                        <constraint firstAttribute="trailing" secondItem="Oyd-q9-lGc" secondAttribute="trailing" id="NUY-yg-OBJ"/>
+                        <constraint firstAttribute="bottom" secondItem="KJc-mq-Af0" secondAttribute="bottom" id="TsX-13-QO9"/>
+                        <constraint firstAttribute="trailing" secondItem="7KL-16-CET" secondAttribute="trailing" id="UQR-kW-wZJ"/>
+                        <constraint firstItem="Oyd-q9-lGc" firstAttribute="centerX" secondItem="WvJ-7L-GWD" secondAttribute="centerX" id="YWA-eq-10u"/>
+                        <constraint firstAttribute="trailing" secondItem="KJc-mq-Af0" secondAttribute="trailing" id="hMo-f0-Go0"/>
+                        <constraint firstItem="KJc-mq-Af0" firstAttribute="top" secondItem="7KL-16-CET" secondAttribute="bottom" constant="-7" id="iSb-Lv-cXq"/>
+                        <constraint firstItem="KJc-mq-Af0" firstAttribute="centerX" secondItem="WvJ-7L-GWD" secondAttribute="centerX" id="lnZ-Z0-vs2"/>
+                        <constraint firstItem="7KL-16-CET" firstAttribute="leading" secondItem="WvJ-7L-GWD" secondAttribute="leading" id="mWc-Po-FEN"/>
+                        <constraint firstItem="7KL-16-CET" firstAttribute="top" secondItem="Oyd-q9-lGc" secondAttribute="bottom" id="yBZ-le-9tV"/>
+                        <constraint firstItem="Oyd-q9-lGc" firstAttribute="top" secondItem="WvJ-7L-GWD" secondAttribute="top" id="yCJ-uy-kFX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WvJ-7L-GWD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KmN-BH-LN5"/>
+                <constraint firstItem="WvJ-7L-GWD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="VBH-Z7-l1Y"/>
+                <constraint firstAttribute="bottom" secondItem="WvJ-7L-GWD" secondAttribute="bottom" id="fGr-4a-acQ"/>
+                <constraint firstAttribute="trailing" secondItem="WvJ-7L-GWD" secondAttribute="trailing" id="z5G-Ef-gUj"/>
+            </constraints>
+            <point key="canvasLocation" x="265" y="-46"/>
+        </view>
+        <tapGestureRecognizer id="waQ-tw-Hgk">
+            <connections>
+                <action selector="onNavBarTapGEsture:" destination="-1" id="VUt-kb-p8p"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="nav_bar2" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
+    </resources>
+</document>
